@@ -1,0 +1,143 @@
+.services
+	position: relative
+	display: block
+	position: relative
+	width: 100vw
+	margin: 0 auto
+	margin-bottom: 80px
+	height: 280px
+	background-color: #c4c4c4
+
+.services__conteiner
+	width: 1160px
+	min-height: 215px
+	margin: 0 auto
+
+.services__menu
+	position: relative
+	width: 277px
+	min-height: 200px
+	position: relative
+	display: flex
+	flex-flow: column wrap
+	justify-content: flex-start
+	align-items: center
+
+.services__menu::after
+	content: ''
+	position: absolute
+	height: 320px
+	width: 7px
+	background-color: #000
+	right: -1px
+	top: -60px
+	
+.controls__services
+	display: block
+	padding: 10px 0 10px 0
+	margin-bottom: 20px
+	text-align: left
+	padding-left: 20px
+	border: none
+
+input.services__menu-title
+	display: none
+	margin-top: -30px
+	margin-bottom: 20px
+
+.service__link
+	position: relative
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+	margin: 0
+	margin-top: 10px
+	margin-bottom: 10px
+	padding-top: 5px
+	padding-bottom: 5px
+	padding-left: 25px
+	padding-right: 25px
+	background: url(../img/slider-item.png) no-repeat center center
+	text-transform: uppercase
+	font-size: 1rem
+	line-height: 1.2
+	letter-spacing: 3px
+	font-family: "Geneva", sans-serif
+	color: #000000
+	text-decoration: none
+	font-weight: bold
+	cursor: pointer
+	z-index: 10
+
+.service__link:hover
+	background: url(../img/slider-item-big.png) no-repeat center center
+	transition: all .5s ease
+
+.content__srevice--totall
+	position: absolute
+	top: -45px
+	left: 430px
+	width: 680px
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+
+.service__description
+	width: 440px
+	height: 90px
+
+.service__title--headline
+	margin-bottom: 30px
+	margin-top: 27px
+	font-family: "Geneva", sans-serif
+	font-size: 3rem
+	color: #000
+	letter-spacing: 0.02rem
+	font-weight: 800
+
+.service__description--content
+	font-family: "Geneva", sans-serif
+	font-size: 1rem
+	font-weight: 300
+	line-height: 1.75
+	letter-spacing: .02rem
+
+.service__img
+	position: absolute
+	top: 45px
+	right: -20px
+	
+	&--delivery2
+		top: 20px
+		right: -20px
+		
+	&--delivery3
+		top: 20px
+		right: -20px
+	
+.tab__slide-1,
+.tab__slide-2,
+.tab__slide-3
+	display: none
+
+.controls > input:nth-of-type(1):checked ~ .tab__slide-1:nth-of-type(1),
+.controls > input:nth-of-type(2):checked ~ .tab__slide-2:nth-of-type(2),
+.controls > input:nth-of-type(3):checked ~ .tab__slide-3:nth-of-type(3)
+	display: block
+	
+.tab__service-1:checked ~ .services--btn-1,
+.tab__service-2:checked ~ .services--btn-2,
+.tab__service-3:checked ~ .services--btn-3
+	background-color: #000
+	background-image: none
+	width: 265px
+	text-align: right
+	padding-left: 10px
+	padding-right: 10px
+	color: #ffe280
+	
+
+.tab__service-1:checked ~ .service__btn-1 > .service__link--active1 > span,
+.tab__service-2:checked ~ .service__btn-2 > .service__link--active2 > span,
+.tab__service-3:checked ~ .service__btn-3 > .service__link--active3 > span
+	color: #ffe280

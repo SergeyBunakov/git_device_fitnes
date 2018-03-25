@@ -1,0 +1,217 @@
+.filter
+	position: relative
+	background-color: #eeeeee
+	margin: 0 auto
+	
+	&__block
+		width: 470px
+		min-height: 70px
+		background-color: #dcdcdc
+		
+	&__block h3
+		margin-left: 100px
+		padding: 17px 0 0 60px
+		font-family: "Geneva", sans-serif
+		font-size: 1.5rem
+		align-items: center
+		text-transform: uppercase
+		color: #000
+		
+	&__price
+		margin-top: 60px
+		margin-left: 160px
+		
+	&__price h4
+		font-family: "Geneva", sans-serif
+		font-size: 1.25rem
+		align-items: center
+		color: #000
+		
+	&__price:before
+		position: absolute
+		content: ''
+		margin-top: -20px
+		width: 240px
+		height: 3px
+		background: #000
+		
+	&__price:after
+		margin-top: 80px
+		position: absolute
+		content: ''
+		width: 240px
+		height: 3px
+		background: #000
+		
+	&__range
+		margin-top: 20px
+		margin-left: 160px
+		position: absolute
+		content: ''
+		width: 240px
+		height: 3px
+		background: #dbdbdb
+		
+	&__scale
+		height: 2px
+		background: #d7dcde
+		
+		&--bar
+			position: absolute
+			width: 160px
+			height: 2px
+			background: #00ce74
+			
+	&__toggle
+		position: absolute
+		top: -7px
+		width: 20px
+		height: 20px
+		border: 8px solid #fff
+		border-radius: 50%
+		cursor: pointer
+		background: #000
+		-webkit-box-shadow: 0 2px 1px 0 #cfcfcf
+		-moz-box-shadow: 0 2px 1px 0 #cfcfcf
+		box-shadow: 0 2px 1px 0 #cfcfcf
+		
+		&--min
+			left: 140px
+			
+
+	&__color
+		margin-top: 100px
+		margin-left: 160px
+		margin-bottom: 60px
+		font-size: .875rem
+		
+	&__color h4
+		font-family: "Geneva", sans-serif
+		font-size: 1.25rem
+		align-items: center
+		color: #000
+		margin-bottom: 30px
+	
+	/* === Filter Bluetooth === */
+	&__bluetooth
+		margin-left: 160px
+		
+	&__bluetooth h4
+		font-family: "Geneva", sans-serif
+		font-size: 1.25rem
+		align-items: center
+		color: #000
+		margin-bottom: 20px
+	
+	&__bluetooth h4:before
+		position: absolute
+		content: ''
+		margin-top: -15px
+		width: 240px
+		height: 3px
+		background: #000
+		
+.form__bluetooth
+	display: flex
+	flex-flow: column wrap
+
+.form__radio
+	display: none
+	
+.form__label
+	margin-left: 10px
+		
+.radio-custom
+	position: relative
+	width: 24px
+	height: 24px
+	border: 2px solid #000
+	border-radius: 50%
+	
+.radio-custom,
+.form__label
+	display: inline-block
+	margin-bottom: 20px
+	vertical-align: middle
+	
+.radio-custom:hover,
+.form__label:hover
+	cursor: pointer
+	
+.form__radio:checked + .radio-custom::before
+	content: ''
+	display: block
+	position: absolute
+	top: 5px
+	right: 5px
+	bottom: 5px
+	left: 5px
+	background: #000
+	border-radius: 50%
+
+/*==================================*/
+
+/* === Filter Price === */
+
+.filter__price--number
+	display: inline-block
+	margin-top: 20px
+	color: #cfcfcf
+	
+.filter__price--number:nth-child(5)
+	margin-left: 90px
+	
+/* === Filter Color === */
+	
+.form__color fieldset
+	border: none
+	
+.form__color input[type="checkbox"]
+	display: none
+	
+.form__color input[type="checkbox"] + label
+	display: inline-block
+	position: relative
+	padding-left: 40px
+	padding-bottom: 20px
+	cursor: pointer
+	
+.form__color input[type="checkbox"] + label:hover
+	color: #f0c52e
+	
+.form__color input[type="checkbox"] + label:before
+	content: ''
+	position: absolute
+	top: -3px
+	left: 0
+	width: 24px
+	height: 24px
+	background: url(../img/svg/checkbox-off.svg)
+	
+.form__color input[type="checkbox"]:checked + label:before
+	background-image: url(../img/svg/checkbox-on.svg)
+	
+/* === Form Button === */
+
+.form__button
+	font-family: "Geneva", sans-serif
+	font-size: 1rem
+	text-transform: uppercase
+	color: #000
+	font-weight: bold
+	line-height: 1.2
+	letter-spacing: 3px
+	margin-top: 40px
+	margin-bottom: 50px
+
+.form__button--link
+	padding: 5px 25px
+	background: url(../img/slider-item.png) no-repeat center center
+
+.form__button--link:hover
+	background: url(../img/slider-item-big.png) no-repeat center center
+	box-shadow: inset 0 0 0 25px #f0d77e
+	transition: all .5s ease
+
+	
+	

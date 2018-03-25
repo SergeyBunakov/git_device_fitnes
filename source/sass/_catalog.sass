@@ -1,0 +1,47 @@
+@import _filter.sass
+@import _goods.sass
+
+.title__category
+	width: 1160px
+	margin: 0 auto
+	
+.title__category h2
+	margin-left: 30px
+	font-family: "Geneva", sans-serif
+	font-size: 3rem
+	color: #000
+
+.bradcrumbs
+	width: 1440px
+	margin: 0 auto
+
+	
+	&__catalog
+		width: 1160px
+		height: 40px
+		margin: 0 auto
+		
+		&--item
+			width: 482px
+			height: 20px
+			display: flex
+			flex-flow: row wrap
+			justify-content: flex-start
+			
+		&--title  ul li:nth-child(1)
+			list-style-type: none
+	
+		&--list
+			margin-left: 30px
+			list-style-type: square
+
+.container__filter
+	width: 1440px
+	height: 1280px
+	margin: 0 auto
+	margin-bottom: -20px
+	display: grid
+	grid-template-columns: 470px 970px
+	grid-template-areas: "filter goods"
+
+	

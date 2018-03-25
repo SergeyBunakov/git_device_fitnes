@@ -1,0 +1,145 @@
+.goods
+	background-color: #fff
+	
+	&__sorting
+		width: 970px
+		min-height: 70px
+		background-color: #ebebeb
+		display: flex
+		
+	&__sorting h3
+		padding: 20px 0 0 60px
+		font-family: "Geneva", sans-serif
+		font-size: 1.5rem
+		text-transform: uppercase
+		text-align: left
+		color: #000
+		
+	&__sorting a
+		padding: 27px 0 0 60px
+		font-family: "Geneva", sans-serif
+		font-size: 1rem
+		text-align: left
+		color: #000
+		
+	&__sorting a:nth-last-child(1)
+		margin: 0
+		padding: 27px 0 0 20px
+	
+	&__container
+		width: 860px
+		margin-top: 40px
+		margin-left: 20px
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		align-content: center
+	
+	&__products
+		position: relative
+		width: 360px
+		height: 480px
+		
+		&--names
+			width: 360px
+			margin-top: 20px
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			
+		&--description
+			width: 250px
+			font-family: "Geneva", sans-serif
+			font-size: 1.125rem
+			color: #000
+			font-weight: bold
+			
+		&--price
+			font-family: "Geneva", sans-serif
+			font-size: 1.125rem
+			color: #909090
+			
+		&--card
+			font-family: "Geneva", sans-serif
+			font-size: 1.125rem
+			color: #000
+			text-transform: uppercase
+			font-weight: bold
+			
+		&--card
+			position: absolute
+			margin: 0
+			padding: 0
+			padding-top: 5px
+			padding-bottom: 5px
+			padding-left: 20px
+			padding-right: 20px
+			top: 180px
+			right: 115px
+			background: url(../img/slider-item.png) no-repeat center center
+			
+		&--card:hover
+			background: url(../img/slider-item-big.png) no-repeat center center
+			
+			
+		&--compare a
+			position: absolute
+			margin: 0
+			top: 230px
+			right: 80px
+			font-family: "Geneva", sans-serif
+			font-size: 1.125rem
+			font-weight: bold
+			color: #bebebe
+			
+		&--compare a:hover
+			color: #000
+			
+		&--new
+			position: absolute
+			margin: 0
+			padding: 0
+			top: 20px
+			right: 20px
+			width: 60px
+			height: 60px
+			border: 2px solid #bebebe
+			border-radius: 50%
+			z-index: 10
+			
+		&--new span
+			position: absolute
+			top: 20px
+			right: 10px
+			color: #bebebe
+			
+	&__pagination
+		width: 780px
+		height: 70px
+		margin: 0 auto
+		margin-left: 60px
+		margin-top: 60px
+		background-color: #ebebeb
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		align-items: center
+		
+		&--item,
+		&--backward,
+		&--forward
+			margin: 0
+			padding-left: 10px
+			padding-right: 10px
+			color: #909090
+			font-weight: bold
+		
+		&--item.active,
+		&--forward.active
+			color: #000000
+		
+.goods__products .goods__products--action
+	display: none
+
+.goods__products:hover .goods__products--action
+	display: block

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог товаров Device</title>
+	<link rel="stylesheet" type="text/css" href="font/GENEVA.woff">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- === Header === -->
+<header class="header">
+	<p class="visually__hidden"><span>Аксесуары для селфи и фитнеса</span></p>
+	<span class="logo__device"><a class="logo__device--link" href="index.html">DEVICE</a></span>
+	<nav class="nav">
+		<div class="nav__list">
+			<div class="navbar">
+				<ul class="navbar__nav">
+					<li class="navbar__item" role="presentation">
+						<form action="/" method="post">
+							<div class="input__wrapper">
+								<i class="input__icon"><img src="img/svg/search.svg" alt="#" width="16" height="16"></i>
+								<input class="input__wrapper-input" type="text" placeholder="Search enter">
+								<input class="btn btn__nav" type="button" name="search" value="Поиск">
+							</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar">
+				<ul class="navbar__nav">
+					<li class="navbar__item"><i class="input__icon"><a href="#" class="navbar__link"><img src="img/svg/user.svg"
+					                                                                                      alt="#" width="16"
+					                                                                                      height="16">Ввойти</a></i>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar">
+				<ul class="navbar__nav">
+					<li class="navbar__item"><i class="input__icon"><a href="#" class="navbar__link "><img
+							src="img/svg/compare.svg" alt="#" width="16" height="16">Сравнить</a></i></li>
+				</ul>
+			</div>
+			<div class="navbar">
+				<ul>
+					<li class="navbar__item"><i class="input__icon"><a href="#" class="navbar__link"><img src="img/svg/cart.svg"
+					                                                                                      alt="#" width="16"
+					                                                                                      height="16">Корзина</a></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav__service">
+			<div class="nav__catalog">
+				<ul class="list__catalog list__catalog--goods">
+					<li class="item__catalog"><a href="#" class="item__catalog">Каталог товаров</a></li>
+					<li class="item__catalog item__catalog--plus"><a href="#" class="link__catalog "><i
+							class="input__icon input__icon--plus"><img src="img/svg/plus.svg" alt="#" width="16" height="16"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__catalog nav__catalog--service">
+				<ul class="list__catalog">
+					<li class="item__catalog list__catalog--service"><a href="tab__service-1" class="link__catalog">Доставка</a>
+					</li>
+					<li class="item__catalog list__catalog--service"><a href="#" class="link__catalog">Гарантия</a></li>
+				</ul>
+			</div>
+			<div class="nav__catalog">
+				<ul class="list__catalog">
+					<li class=" item__catalog list__catalog--service "><a href="# " class="link__catalog">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav__catalog--sub">
+			<div class="nav__submenu">
+				<ul class="list__submenu">
+					<li class="item__submenu"><a href="" class="link__submenu">Виртуальная реальность</a></li>
+					<li class="item__submenu"><a href="" class="link__submenu">Моноподы для селфи</a></li>
+					<li class="item__submenu"><a href="" class="link__submenu">Экшн камеры</a></li>
+				</ul>
+			</div>
+			<div class="nav__submenu">
+				<ul class="list__submenu">
+					<li class="item__submenu"><a href="" class="link__submenu">Фитнес браслеты</a></li>
+					<li class="item__submenu"><a href="" class="link__submenu">Умные часы</a></li>
+				</ul>
+			</div>
+			<div class="nav__submenu">
+				<ul class="list__submenu">
+					<li class="item__submenu"><a href="" class="link__submenu">Квадрокоптеры</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- === End Header === -->
+
+
+<!-- === Bradcrumbs === -->
+<div class="title__category">
+	<h2>Моноподы для селфи</h2>
+</div>
+<div class="bradcrumbs">
+	<div class="bradcrumbs__catalog bradcrumbs__catalog--title">
+		<ul class="bradcrumbs__catalog--item">
+			<li class="bradcrumbs__catalog--list"><a href="index.html" class="bradcrumbs__catalog--link">Главная</a></li>
+			<li class="bradcrumbs__catalog--list"><a href="#" class="bradcrumbs__catalog--link">Каталог товаров</a></li>
+			<li class="bradcrumbs__catalog--list"><a href="#" class="bradcrumbs__catalog--link">Моноподы для селфи</a></li>
+		</ul>
+	</div>
+</div>
+<!-- === End Bradcrumbs === -->
+<!-- === Form filter === -->
+<div class="wrapper">
+	<div class="container__filter">
+		<!-- === Filter Price === -->
+		<div class="filter">
+			<div class="filter__block"><h3>Фильтр :</h3></div>
+			<div class="filter__price"><h4>Стоимость</h4></div>
+			<div class="filter__range">
+				<div class="filter__scale">
+					<div class="filter__scale--bar"></div>
+				</div>
+				<div class="filter__toggle filter__toggle--min"></div>
+				<div class="filter__toggle filter__toggle--max"></div>
+				<div class="filter__price--number">от 5</div>
+				<div class="filter__price--number">до 5000</div>
+			</div>
+			<!-- === Filter Color === -->
+			<div class="filter__color">
+				<h4>Цвет</h4>
+				<form action="/echo" class="form__color" method="get">
+					<fieldset>
+						<input class="form__color form__color--checkbox" type="checkbox" name="color" id="color1" checked>
+						<label for="color1" class="fiorm__input--text"><span>Чёрный</span></label>
+					</fieldset>
+					<fieldset>
+						<input class="form__color--checkbox" type="checkbox" name="color" id="color2">
+						<label for="color2" class="form__input--text"><span>Белый</span></label>
+					</fieldset>
+					<fieldset>
+						<input class="form__color--checkbox" type="checkbox" name="color" id="color3">
+						<label for="color3" class="fiorm__input--text"><span>Синий</span></label>
+					</fieldset>
+					<fieldset>
+						<input class="form__color--checkbox" type="checkbox" name="color" id="color4">
+						<label for="color4" class="fiorm__input--text"><span>Красный</span></label>
+					</fieldset>
+					<fieldset>
+						<input class="form__color--checkbox" type="checkbox" name="color" id="color5">
+						<label for="color5" class="fiorm__input--text"><span>Розовый</span></label>
+					</fieldset>
+				</form>
+			</div>
+			<!-- === Filter Bluetooth === -->
+			<div class="filter__bluetooth">
+				<h4>Bluetooth</h4>
+				<form action="/echo" method="get" class="form__bluetooth">
+					
+					<label for="radio-true">
+						<input type="radio" class="form__radio" id="radio-true" name="radio-text" checked>
+						<span class="radio-custom"></span>
+						<span class="form__label">Есть</span>
+					</label>
+					
+					<label for="radio-false">
+						<input type="radio" class="form__radio" id="radio-false" name="radio-text">
+						<span class="radio-custom"></span>
+						<span class="form__label">Нет</span>
+					</label>
+				</form>
+				
+				<div class="form__button">
+					<span><a class="form__button form__button--link" href="#">Показать</a></span>
+				</div>
+			</div>
+		
+		</div>
+		
+		<!-- === End Form filter === -->
+		<!-- === Goods === -->
+		<div class="goods">
+			<div class="goods__sorting">
+				<h3>Сортировка :</h3>
+				<a class="goods__sorting--price" href="#"><span>По цене</span></a>
+				<a class="goods__sorting--type" href="#"><span>По типу</span></a>
+				<a class="goods__sorting--populatory" href="#"><span>По популярности</span></a>
+				<a href="#" class="goods__sorting--icon-up"><img src="img/svg/icon-up-dir.svg" alt="sort-up" width="17"
+				                                                 height="9"></a>
+				<a href="#" class="goods__sorting--icon-down"><img src="img/svg/icon-down-dir.svg" alt="sort-down" width="17"
+				                                                   height="9"></a>
+			</div>
+			
+			<div class="goods__container">
+				
+				<div class="goods__products">
+					<a href="#"><img src="img/item-1.jpg" alt="item-1" width="360" height="378"></a>
+					<div class="goods__products--names">
+						<p class="goods__products--description">Любительская селфи-палка</p>
+						<p class="goods__products--price">500 руб.</p>
+					</div>
+					<div class="goods__products--action">
+						<span class="goods__products--card"><a href="#">В корзину</a></span></div>
+					<div class="goods__products--action">
+						<span class="goods__products--compare"><a href="#">Добавить к сравнению</a></span>
+					</div>
+				</div>
+				
+				<div class="goods__products">
+					<a href="#"><img src="img/item-2.jpg" alt="item-2" width="360" height="378"></a>
+					<div class="goods__products--names">
+						<p class="goods__products--description">Профессиональная селфи-палка</p>
+						<p class="goods__products--price">1500 руб.</p>
+					</div>
+					<div class="goods__products--action">
+						<span class="goods__products--card"><a href="#">В корзину</a></span></div>
+					<div class="goods__products--action">
+						<span class="goods__products--compare"><a href="#">Добавить к сравнению</a></span>
+					</div>
+					<div class="goods__products--new">
+						<div><span>NEW</span></div>
+					</div>
+				</div>
+				
+				<div class="goods__products">
+					<a href="#"><img src="img/item-3.jpg" alt="item-3" width="360" height="378"></a>
+					<div class="goods__products--names">
+						<p class="goods__products--description">Непотопляемая селфи-палка</p>
+						<p class="goods__products--price">2500 руб.</p>
+					</div>
+					<div class="goods__products--action">
+						<span class="goods__products--card"><a href="#">В корзину</a></span></div>
+					<div class="goods__products--action">
+						<span class="goods__products--compare"><a href="#">Добавить к сравнению</a></span>
+					</div>
+				</div>
+				
+				<div class="goods__products">
+					<a href="#"><img src="img/item-4.jpg" alt="item-4" width="360" height="378"></a>
+					<div class="goods__products--names">
+						<p class="goods__products--description">Селфи-палка «Следуй за мной»</p>
+						<p class="goods__products--price">4900 руб.</p>
+					</div>
+					<div class="goods__products--action">
+						<span class="goods__products--card"><a href="#">В корзину</a></span></div>
+					<div class="goods__products--action">
+						<span class="goods__products--compare"><a href="#">Добавить к сравнению</a></span>
+					</div>
+					<div class="goods__products--new">
+						<div><span>NEW</span></div>
+					</div>
+				</div>
+			
+			
+			</div>
+			
+			<div class="goods__pagination">
+				<div>
+					<a href="#" class="goods__paginatio--item goods__pagination--backward">Назад</a>
+				</div>
+				<div>
+					<a href="#" class="goods__pagination--item goods__pagination--current active">1</a>
+					<a href="#" class="goods__pagination--item">2</a>
+					<a href="#" class="goods__pagination--item">3</a>
+				</div>
+				<div>
+					<a href="#" class="goods__paginatio--item goods__pagination--forward active">Вперёд</a>
+				</div>
+			
+			
+			</div>
+		
+		</div>
+	</div>
+</div>
+<!-- === End Goods === -->
+<!-- ==== Footer === -->
+<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__top">
+			<div class="footer__logo">
+				<span class="footer__device--logo"><a class="logo__device--link-footer" href="index.html">DEVICE</a></span>
+			</div>
+			<div class="footer__navbar">
+				<div class="navbar">
+					<ul class="footer__navbar--nav">
+						<li class="footer__item"><a href="#" class="footer__link"><i class="footer__icon"><img
+								src="img/footer_user.png" alt="#" width="16" height="16"></i>Ввойти</a></li>
+					</ul>
+				</div>
+				<div class="navbar">
+					<ul class="navbar__nav">
+						<li class="footer__item"><a href="#" class="footer__link "><i class="footer__icon"><img
+								src="img/footer_compare.png" alt="#" width="16" height="16"></i>Сравнить</a></li>
+					</ul>
+				</div>
+				<div class="navbar">
+					<ul>
+						<li class="footer__item"><a href="#" class="footer__link"><i class="footer__icon"><img
+								src="img/footer_cart.png" alt="#" width="16" height="16"></i>Корзина</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer__menu">
+			<div class="footer__menu--adress">г. Москва, ул. Строителей, 15
+			</div>
+			<div class="footer__menu--service">
+				<ul class="footer__menu--title">
+					<li class="footer__menu--item"><a href="#" class="footer__menu--link">Доставка</a></li>
+					<li class="footer__menu--item"><a href="#" class="footer__menu--link">Гарантия</a></li>
+					<li class="footer__menu--item"><a href="#" class="footer__menu--link">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu--phone">Тел.: +7 (495) 495-95-95</div>
+		</div>
+		<div class="footer__social">
+			<div class="footer__social--icons"><i><a href="facebook.com"><img class="footer__social--img" src="img/svg/fb.svg"
+			                                                                  alt="facebook"></a></i></div>
+			<div class="footer__social--icons"><i><a href="vk.com"><img class="footer__social--img" src="img/svg/vk.svg"
+			                                                            alt="inatagramm"></a></i></div>
+			<div class="footer__social--icons"><i><a href="twitter.com"><img class="footer__social--img"
+			                                                                 src="img/svg/twitter.svg" alt="twitter"></a></i>
+			</div>
+		</div>
+	</div>
+	<div class="validation__w3org">
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+				     src="http://jigsaw.w3.org/css-validator/images/vcss"
+				     alt="Правильный CSS!"/>
+			</a>
+		</p>
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+				     src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				     alt="Правильный CSS!"/>
+			</a>
+		</p>
+	</div>
+</footer>
+<!-- ==== End Footer === -->
+</body>
+</html>
